@@ -1,53 +1,86 @@
-# **Python PyPoll Analysis**
+# **Python PyCitySchools Analysis**
 
-### Overview of Project
+## Background
 
-An automated audit of the election results in Colorado that provides the count and percentage of votes for each candidate and county. The winner of the election is output as a text file and comma separated-values (CSV), along with a summary results table.
+The purpose of this analysis was to re-examine the passing scores before and after removing the nineth grade students of Thomas High School. The scores were averaged for each school, and further subdivided into the individual grade performances. The change in the score outcomes was analyzed to determine the change in school ranking based on the budget per student, school type, and school size.
 
-### Purpose
+## Analysis
 
-The purpose of this analysis was to provide an automated way to tabulate the results of the Colorado election. Given the data provided, the votes were calculated for each candidate and county. The script written allows a quick audit of the results while being independent of vote counters in order to validate any election results.
+* How was the District summary affected?
 
-The outputs offer three summaries: an output of the summary within the terminal, an output showing the summary in a text file, and an output showing the summary as a comma separated-values worksheet.
+    The district summary showed a slight changes across the below metrics. Average scores showed no significant differences removing the nineth grade class at Thomas High School. The percent of students that passed dropped approximately 01 percent for math, reading, and overall. This alligned with the 461 students removed from the 39170 total students in the district (~1.1% of the students). Scores changed by the following:
 
-### Election Results
+        * Average Math Score:
+                    - Original: 78.99%
+                    - Modified: 78.93%
+        * Average Reading Score:
+                    - Original: 81.88%
+                    - Modified: 81.86%
+        * Percent Passing Math:
+                    - Original: 74.98%
+                    - Modified: 73.88%
+        * Percent Passing Reading:
+                    - Original: 85.81%
+                    - Modified: 84.65%
+        * Percent Passing Overall:
+                    - Original: 65.17%
+                    - Modified: 64.09%
 
-1. The below is a summary of the elections results:
+* How was the School summary affected?
 
-  * Total Votes Cast: 
+    The school summary showed a change only for Thomas High School. The number of students used in the assessment decreased by 461, which included the entire nineth grade. The drop seen at the district level is not seen at the school level. Thomas High School saw no changes in scores greater than .5%. Scores changed by the following:
+        
+        * Average Math Score:
+                    - Original: 83.42%
+                    - Modified: 83.35&
+        * Average Reading Score:
+                    - Original: 83.85%
+                    - Modified: 83.90%
+        * Percent Passing Math:
+                    - Original: 93.27%
+                    - Modified: 93.19%
+        * Percent Passing Reading:
+                    - Original: 97.31%
+                    - Modified: 97.02%
+        * Percent Passing Overall:
+                    - Original: 90.95%
+                    - Modified: 90.63%
 
-          * Total: 369,711
-          * Charles C. Stockham: 85,213 (23.05%)
-          * Diana DeGette: 272,892 (73.81%)
-          * Raymon A. Doane: 11,606 (3.14%)
+* How does replacing the nineth graders' math and reading scores effect Thomas High School's performace relative to other schools?
 
-  * County Votes Cast:
+    Thomas High School (THS) remained the same ranking among the schools based on overall percent of passing students. Average math scores dropped THS from 4th to 6th. Average reading scores saw no change in school ranking. Percentage of students that passed math saw no change in school ranking. Percentage of students that passed reading saw THS drop from 1st to 3rd. 
 
-      Jefferson:
-          
-          * Total: 38,855 (10.51%)
-          * Charles C. Stockham: 19,723 (50.76%)
-          * Diana DeGette: 17,963 (46.23%)
-          * Raymon A. Doane: 1,196 (3.01%)
+* How does replacing the nineth grade scores effect the following:
 
-      Arapahoe:
+    - Math and reading scores by grade:
 
-          * Total: 24,801 (82.78%)
-          * Charles C. Stockham: 8,302 (33.47%)
-          * Diana DeGette: 15,647 (63.09%)
-          * Raymon A. Doane: 852 (3.44%)
+        When isolating the grade scores for each high school based on math averages, THS was ranked 3rd for nineth grade, 7th for tenth grade, 5th for eleventh grade, and 4th for twelfth grade. Reading scores saw THS nineth graders ranked 5th, 1st for tenth grade, 8th for eleventh grade, and 7th for twelfth grade. The above rankings reflect the original scores before they were removed. 
 
-      Denver:
+    - Student spending compared to scores:
 
-          * Total: 306,055 (6.71%)
-          * Charles C. Stockham: 57,188 (18.69%)
-          * Diana DeGette: 239,282 (78.18%)
-          * Raymon A. Doane: 9,585 (3.13%)
+        No  change was seen when removing nineth grade scores from the overall scores.
 
-2. The above results can be concluded that Diana DeGette won the election with 73.81% (272,892) of the total votes cast. Her highest voting county was Denver with a vote count of 239,282 out of 306,055 total votes cast. 
+    - School size compared to scores:
 
-### Election-Audit Summary
+        No  change was seen when removing nineth grade scores from the overall scores.
 
-This script includes the ability for an election to be quickly tablulated for each candidate, county, and a county breakdown by candidate. These outputs are pushed as both total counts and percentage of votes recieved. The CSV output file includes a full breakdown of the election based on any candidate or county present.
+    - School type compared to scores:
 
-The only modification necessary for this script to capture other elections is the text file output/terminal output. It is specifically set to show the known cadidates values in the "election_results" variable, which are manually entered. If the election goes beyond the individual state level, it would be necessary for the script to be ammended to accurately reflect state totals/state assignments as well.
+        No  change was seen when removing nineth grade scores from the overall scores.
+
+* Score trends based on student spending, school size, and school type:
+
+    Student Spending
+    - Based on the distribution of spending per student from the highest overall passing percentages to the least, it appears that no significant trend is present.
+
+    School Size
+    - Based on the distribution of school size from the highest overall passing percentages to the least, the highest performing (>88%) schools were less than 2500 students, the worst were those greater than 2500 students.
+
+    School Type
+    - Based on the distribution of school types from the highest overall passing percentages to the least, the highest performing (>88%) schools were all charter, District schools were the lowest performers.
+
+## Conclusion
+
+The nineth grade class at Thomas High School saw little impact in the overall performance of Thomas High School, or the District. Minor changes were seen in Thomas High School's ranking in reading and math.
+
+The most significant results could be seen comparing school overall passing percentages with student spending, school size, and school type. Spending saw no significant correlation between overall passing and the amount. School size was negatively correlated, showing lower performance overall when student populations increased. Lastly, the school type was directly correlated with the performance. Charter schools showed high performace, while district schools showed low overall passing percentages.
