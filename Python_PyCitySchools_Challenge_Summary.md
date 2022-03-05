@@ -28,7 +28,7 @@ The purpose of this analysis was to re-examine the passing scores before and aft
 
 * How was the School summary affected?
 
-    The school summary showed a change only for Thomas High School. The number of students used in the assessment decreased by 461, which included the entire nineth grade. The drop seen at the district level is not seen at the school level. Thomas High School saw no changes in scores greater than .5%. Scores changed by the following:
+    The school summary showed a change only for Thomas High School. The number of students used in the assessment decreased by 461, which included the entire nineth grade. The effect on Thomas Higg School was much more significant than the District level. Passing percentages saw a significant drop. Scores changed by the following:
         
         * Average Math Score:
                     - Original: 83.42%
@@ -38,17 +38,17 @@ The purpose of this analysis was to re-examine the passing scores before and aft
                     - Modified: 83.90%
         * Percent Passing Math:
                     - Original: 93.27%
-                    - Modified: 93.19%
+                    - Modified: 66.91%
         * Percent Passing Reading:
                     - Original: 97.31%
-                    - Modified: 97.02%
+                    - Modified: 69.66%
         * Percent Passing Overall:
                     - Original: 90.95%
-                    - Modified: 90.63%
+                    - Modified: 65.08%
 
 * How does replacing the nineth graders' math and reading scores effect Thomas High School's performace relative to other schools?
 
-    Thomas High School (THS) remained the same ranking among the schools based on overall percent of passing students. Average math scores dropped THS from 4th to 6th. Average reading scores saw no change in school ranking. Percentage of students that passed math saw no change in school ranking. Percentage of students that passed reading saw THS drop from 1st to 3rd. 
+    Thomas High School (THS) decreased from the 2nd ranked school based on overall passing percentages, to the 8th ranked school. It dropped to the lowest ranked charter school in the district.
 
 * How does replacing the nineth grade scores effect the following:
 
@@ -58,7 +58,7 @@ The purpose of this analysis was to re-examine the passing scores before and aft
 
     - Student spending compared to scores:
 
-        No  change was seen when removing nineth grade scores from the overall scores.
+        Thomas High School dropped from the 2nd ranked school to the 8th. No change was seen when removing nineth grade scores from the overall.
 
     - School size compared to scores:
 
@@ -81,6 +81,6 @@ The purpose of this analysis was to re-examine the passing scores before and aft
 
 ## Conclusion
 
-The nineth grade class at Thomas High School saw little impact in the overall performance of Thomas High School, or the District. Minor changes were seen in Thomas High School's ranking in reading and math.
+The nineth grade class at Thomas High School saw significant impact on the overall performance of the high school. Not only did the removal of nineth grade scores drop the passing percentages more than 25%, they also dropped Thomas High School to the lowest ranked Charter School in the District.
 
 The most significant results could be seen comparing school overall passing percentages with student spending, school size, and school type. Spending saw no significant correlation between overall passing and the amount. School size was negatively correlated, showing lower performance overall when student populations increased. Lastly, the school type was directly correlated with the performance. Charter schools showed high performace, while district schools showed low overall passing percentages.
